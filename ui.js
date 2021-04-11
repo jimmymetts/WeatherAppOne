@@ -34,7 +34,7 @@ class UI {
     }
   
     getFromLS() {
-      if (localStorage.getItem("city" == null)) {
+      if (localStorage.getItem("city" === null)) {
         return this.defaultCity;
       } else {
         this.city = JSON.parse(localStorage.getItem("city"));
